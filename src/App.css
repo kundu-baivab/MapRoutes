@@ -1,0 +1,315 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.navbar-logo {
+  position: relative;
+  left: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Form.css */
+.trip-form-container {
+    padding: 0 20px;
+  }
+
+  .wrapper{
+    position: relative;
+  }
+
+  .icon{
+    position: absolute;
+    top:50%;
+    left:1rem;
+    transform: translateY(-50%);
+  }
+  
+  .form-group {
+    margin-top: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    width: 250px;
+    height: 45px;
+    padding: 5px 0;
+    padding-left: 2.5rem;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: #dcdbdb solid 1px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  
+  .add-stop-button, .remove-stop-button {
+    padding: 8px 12px;
+    padding-top: 0;
+    border: none;
+    background-color: #E9EEF2;
+    color: #151414;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .button-group{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .remove-stop-button {
+    margin-top: 5px;
+  }
+  
+  .add-stop-button:hover, .remove-stop-button:hover {
+    opacity: 0.8;
+  }
+
+  .options {
+    position: absolute;
+    background-color: white;
+    border: solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+    border-color: gray;
+    padding: 5px;
+    margin-right:10px;
+    z-index: 2;
+  }
+
+  .option {
+    font-size: 0.9rem;
+    color: black;
+    cursor: pointer;
+    line-height: 20px;
+    padding-left: 0.5rem;
+    margin: auto;
+  }
+
+  .option:hover {
+    background-color: lightgray;
+    border-radius: 0.5rem;
+  }
+
+/* Heading.css */
+
+.headtext {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.headtext{
+    display: flex;
+    justify-content: center;
+    color: #1B31A8;
+    font-weight: 400;
+    font-style: work-sans-;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 30px;
+}
+
+
+/* App.css */
+.app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 156px;
+
+  }
+
+  .full-form{
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    margin-right: 170px;
+  }
+
+  .dis-calc{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    background-color: #1B31A8;
+    color: white;
+    width: 141px;
+    height: 62px;
+    border-color: transparent;
+    border-radius: 32px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .dis-calc:hover{
+    opacity: 0.8;
+  }
+
+  .form-button{
+    flex: 1;
+  }
+  
+  .form-container{
+    flex: 1;
+  }
+  
+  .map-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  .form-container {
+    z-index: 1; 
+    position: relative; 
+  }
+
+  .distance{
+    width: 510px;
+    border-radius: 8px;
+    border: #dcdbdb solid 1px;
+    margin: 35px 20px;
+  }
+
+  .dis{
+    height: 75px;
+    background-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: #dcdbdb solid 1px;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dis h2{
+    margin-left: 25px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+  }
+
+  .dis p{
+    margin-right: 25px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #0079FF;
+  }
+
+  .route{
+    height: 75px;
+    background-color: #F4F8FA;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: #dcdbdb solid 1px;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .route p{
+    margin: 0 30px;
+  }
+  
+  
+  @media (max-width: 1328px) {
+    .headtext{
+        display: none;
+    }
+
+    .navbar{
+      display: none;
+    }
+
+    .app-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 0;
+        justify-content: center;
+    }
+
+    .full-form{
+      display: flex;
+      flex-direction: column;
+      margin-right: 0;
+    }
+
+    .trip-form-container{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form-group input{
+      width: 300px;
+      margin-right: 0;
+    }
+
+    .add-stop-button{
+      margin-left: 50px;
+    }
+
+    .form-button{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .dis-calc{
+      top: 0;
+      left: 0;
+      height: 40px;
+    }
+
+    .button-group{
+        margin-right: 0;
+    }
+
+    .form-group label{
+        display: none;
+    }
+
+    .dist-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    .distance{
+      width: 100%;
+      margin: 0 0;
+      margin-bottom: 10px;
+    }
+
+  }
+  
